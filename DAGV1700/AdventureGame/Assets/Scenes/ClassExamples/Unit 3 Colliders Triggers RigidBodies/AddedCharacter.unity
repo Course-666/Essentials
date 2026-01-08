@@ -319,7 +319,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d9d9ba1b73ba842ebb97194e8cb9d7f5, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: d9d9ba1b73ba842ebb97194e8cb9d7f5, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -6808,7 +6808,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d9d9ba1b73ba842ebb97194e8cb9d7f5, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: d9d9ba1b73ba842ebb97194e8cb9d7f5, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -7645,7 +7645,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -337809622720044007, guid: 4eb5b48d1d9944cd697e5fe232dcccb4, type: 2}
-  m_audioClip: {fileID: 8300000, guid: d006bc8b738bd4418833d0886656a892, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: d006bc8b738bd4418833d0886656a892, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -9468,10 +9468,10 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562991507}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -9551,7 +9551,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -1995228697233998473, guid: 4eb5b48d1d9944cd697e5fe232dcccb4, type: 2}
-  m_audioClip: {fileID: 8300000, guid: d006bc8b738bd4418833d0886656a892, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: d006bc8b738bd4418833d0886656a892, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -10797,7 +10797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5097916118070458696, guid: a061d927dc0b14a4c9da70f64eb366be, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: -0.05
       objectReference: {fileID: 0}
     - target: {fileID: 5097916118070458696, guid: a061d927dc0b14a4c9da70f64eb366be, type: 3}
       propertyPath: m_LocalPosition.z
