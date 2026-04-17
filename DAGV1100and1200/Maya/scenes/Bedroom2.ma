@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Bedroom2.ma
-//Last modified: Fri, Apr 17, 2026 02:26:46 PM
+//Last modified: Fri, Apr 17, 2026 03:32:03 PM
 //Codeset: 1252
 file -rdi 1 -ns "DeskLamp" -rfn "DeskLampRN" -op "v=0;" -typ "mayaAscii" "C:/Users/cmors/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/DeskLamp.ma";
 file -rdi 1 -ns "PotedPlant1" -rfn "PotedPlantRN" -op "v=0;" -typ "mayaAscii"
@@ -8,15 +8,17 @@ file -rdi 1 -ns "PotedPlant1" -rfn "PotedPlantRN" -op "v=0;" -typ "mayaAscii"
 file -rdi 1 -ns "Table1" -rfn "TableRN1" -op "v=0;" -typ "mayaAscii" "C:/Users/cmors/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Table.ma";
 file -rdi 1 -ns "MyChair" -rfn "MyChairRN" -op "v=0;" -typ "mayaAscii" "C:/Users/cmors/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/MyChair.ma";
 file -rdi 1 -ns "Floor" -rfn "FloorRN" -op "v=0;" -typ "mayaAscii" "C:/Users/cmors/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Floor.ma";
-file -rdi 1 -ns "Wall_With_Window" -rfn "Wall_With_WindowRN" -op "v=0;" -typ
-		 "mayaAscii" "C:/Users/cmors/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Wall_With_Window.ma";
+file -rdi 1 -ns "Wall_With_Window" -dr 1 -rfn "Wall_With_WindowRN" -op "v=0;"
+		 -typ "mayaAscii" "C:/Users/cmors/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Wall_With_Window.ma";
 file -rdi 1 -ns "Wall_Withought_Window" -rfn "Wall_Withought_WindowRN" -op "v=0;"
 		 -typ "mayaAscii" "C:/Users/cmors/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Wall_Withought_Window.ma";
 file -rdi 1 -ns "Mug" -rfn "MugRN" -op "v=0;" -typ "mayaAscii" "C:/Users/cmors/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Mug.ma";
 file -rdi 1 -ns "MyBookShelf" -rfn "MyBookShelfRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/cmors/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/MyBookShelf.ma";
 file -rdi 1 -ns "MyBook" -rfn "MyBookRN" -op "v=0;" -typ "mayaAscii" "C:/Users/cmors/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/MyBook.ma";
-file -rdi 1 -ns "Wall_With_Window1" -rfn "Wall_With_WindowRN1" -op "v=0;" -typ
+file -rdi 1 -ns "Wall_With_Window1" -dr 1 -rfn "Wall_With_WindowRN1" -op "v=0;"
+		 -typ "mayaAscii" "C:/Users/cmors/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Wall_With_Window.ma";
+file -rdi 1 -ns "Wall_With_Window" -rfn "Wall_With_WindowRN2" -op "v=0;" -typ
 		 "mayaAscii" "C:/Users/cmors/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Wall_With_Window.ma";
 file -r -ns "DeskLamp" -dr 1 -rfn "DeskLampRN" -op "v=0;" -typ "mayaAscii" "C:/Users/cmors/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/DeskLamp.ma";
 file -r -ns "PotedPlant1" -dr 1 -rfn "PotedPlantRN" -op "v=0;" -typ "mayaAscii" "C:/Users/cmors/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/PotedPlant.ma";
@@ -33,6 +35,8 @@ file -r -ns "MyBookShelf" -dr 1 -rfn "MyBookShelfRN" -op "v=0;" -typ "mayaAscii"
 file -r -ns "MyBook" -dr 1 -rfn "MyBookRN" -op "v=0;" -typ "mayaAscii" "C:/Users/cmors/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/MyBook.ma";
 file -r -ns "Wall_With_Window1" -dr 1 -rfn "Wall_With_WindowRN1" -op "v=0;" -typ
 		 "mayaAscii" "C:/Users/cmors/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Wall_With_Window.ma";
+file -r -ns "Wall_With_Window" -dr 1 -rfn "Wall_With_WindowRN2" -op "v=0;" -typ "mayaAscii"
+		 "C:/Users/cmors/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Wall_With_Window.ma";
 requires maya "2026";
 requires "stereoCamera" "10.0";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -44,13 +48,13 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "0EFCD985-4D88-3C21-BAEA-D99EC88BAE0C";
+fileInfo "UUID" "B3B716F4-48A3-9BFD-27B3-ABA0EECD357E";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "2ED96106-4E69-5FD5-5DC0-1A83841026E8";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 17.338350856841583 40.361931661967326 47.546719359735917 ;
-	setAttr ".r" -type "double3" -33.600000000026967 5058.3999999999651 -8.3797952588943598e-16 ;
+	setAttr ".t" -type "double3" 40.217445059268478 39.787251090124911 33.349327052353928 ;
+	setAttr ".r" -type "double3" -32.999999999827089 5086.7999999999365 0 ;
 	setAttr ".rpt" -type "double3" -1.1790794350962924e-15 -1.2647330966018623e-15 1.0557217986403053e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "49BBCEF9-47B1-B6F6-2B37-959507AC177F";
@@ -6480,15 +6484,15 @@ createNode transform -n "DeskLamp:transform5" -p "DeskLampRNfosterParent1";
 	rename -uid "49398AA5-462D-C302-6BD1-549B8A323AC8";
 	setAttr ".v" no;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "A72D5C8C-402F-679B-7DB7-0F9239231805";
+	rename -uid "FC2D3309-4D0B-A217-0956-888F46204760";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "E03524E2-4C45-496F-E672-7AB2BCE14751";
+	rename -uid "3488ABB1-4693-8E56-1E77-CAA2D59D8269";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "2603AF2C-425F-040C-A449-AEBC62852EF7";
+	rename -uid "69642564-4062-4025-18D4-F9892ED4DB6A";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "26C08CF7-4600-8676-734C-B983F90488A6";
+	rename -uid "7144BF2C-41B0-5448-09AE-E885344AEB26";
 	setAttr ".cdl" 3;
 	setAttr -s 4 ".dli[1:3]"  1 4 3;
 	setAttr -s 3 ".dli";
@@ -6496,7 +6500,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "30A4E62B-4B2E-FB19-E610-9ABA10AD16B9";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "139E47AC-4E53-C47D-0139-B0AB3E938D7D";
+	rename -uid "A7D40414-4530-6ABF-040F-6FA7E81FB739";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "D12064BD-4DED-04CC-CFE9-2E8D4219226B";
 	setAttr ".g" yes;
@@ -7096,6 +7100,22 @@ createNode reference -n "Wall_With_WindowRN1";
 		"Wall_With_WindowRN1" 0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
+createNode reference -n "sharedReferenceNode";
+	rename -uid "FCB1D23B-4CC0-60EA-2595-A59E80393EBF";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"sharedReferenceNode";
+createNode reference -n "Wall_With_WindowRN2";
+	rename -uid "803DBD65-4733-B8AB-16C2-E68A46488DCD";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"Wall_With_WindowRN2"
+		"Wall_With_WindowRN2" 0
+		"Wall_With_WindowRN2" 3
+		2 "|Wall_With_Window:polySurface2" "translate" " -type \"double3\" -24 0 0"
+		
+		2 "|Wall_With_Window:polySurface2" "rotate" " -type \"double3\" 0 90 0"
+		2 "|Wall_With_Window:polySurface2" "rotatePivotTranslate" " -type \"double3\" 0 0 0";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
 select -ne :time1;
 	setAttr ".o" 103;
 	setAttr ".unw" 103;
@@ -7114,7 +7134,7 @@ select -ne :defaultShaderList1;
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
-	setAttr -s 9 ".r";
+	setAttr -s 10 ".r";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
@@ -7122,9 +7142,9 @@ select -ne :openPBR_shader1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 61 ".dsm";
+	setAttr -s 63 ".dsm";
 	setAttr ".ro" yes;
-	setAttr -s 21 ".gn";
+	setAttr -s 23 ".gn";
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :defaultRenderGlobals;
@@ -7225,6 +7245,8 @@ connectAttr "DeskLampRN.phl[43]" "DeskLamp:groupParts5.ig";
 connectAttr "DeskLamp:groupId9.id" "DeskLamp:groupParts5.gi";
 connectAttr "polyUnite4.out" "DeskLamp:groupParts6.ig";
 connectAttr "DeskLamp:groupId11.id" "DeskLamp:groupParts6.gi";
+connectAttr "sharedReferenceNode.sr" "Wall_With_WindowRN.sr";
+connectAttr "sharedReferenceNode.sr" "Wall_With_WindowRN1.sr";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "DeskLampRN.phl[3]" ":initialShadingGroup.dsm" -na;
 connectAttr "DeskLampRN.phl[7]" ":initialShadingGroup.dsm" -na;
