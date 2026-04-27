@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/My Levels/Level01.unity
     guid: 73ea56022cfb343428903d868201a430
+  - enabled: 1
+    path: Assets/Scenes/My Levels/YouDied.unity
+    guid: 3bd4697c5a24bf443a6908a647bdd087
+  - enabled: 1
+    path: Assets/Scenes/My Levels/YouWin.unity
+    guid: 07246366e3391b649bfe4377f4817486
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -17,7 +17,7 @@ public class MySimpleImageBehaviour : MonoBehaviour
         imageObj.fillAmount = dataObj.value;
         if (dataObj.value <= 0f)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene("YouDied");
         }
     }
 }
