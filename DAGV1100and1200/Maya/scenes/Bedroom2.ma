@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Bedroom2.ma
-//Last modified: Fri, Apr 17, 2026 03:32:03 PM
+//Last modified: Tue, Apr 28, 2026 05:09:57 PM
 //Codeset: 1252
 file -rdi 1 -ns "DeskLamp" -rfn "DeskLampRN" -op "v=0;" -typ "mayaAscii" "C:/Users/cmors/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/DeskLamp.ma";
 file -rdi 1 -ns "PotedPlant1" -rfn "PotedPlantRN" -op "v=0;" -typ "mayaAscii"
@@ -48,23 +48,24 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "B3B716F4-48A3-9BFD-27B3-ABA0EECD357E";
+fileInfo "UUID" "F5FDE8E3-4811-B943-B83E-E49A90FF08BF";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "2ED96106-4E69-5FD5-5DC0-1A83841026E8";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 40.217445059268478 39.787251090124911 33.349327052353928 ;
-	setAttr ".r" -type "double3" -32.999999999827089 5086.7999999999365 0 ;
-	setAttr ".rpt" -type "double3" -1.1790794350962924e-15 -1.2647330966018623e-15 1.0557217986403053e-15 ;
+	setAttr ".t" -type "double3" 21.484671144396366 24.94888199275746 23.225775996996596 ;
+	setAttr ".r" -type "double3" -32.999999999827097 46.799999999936212 -4.4139065394011321e-14 ;
+	setAttr ".rp" -type "double3" 4.4408920985006262e-16 1.7763568394002505e-15 0 ;
+	setAttr ".rpt" -type "double3" -2.0244263268016671e-15 -1.5513117366256461e-15 6.9713666521703056e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "49BBCEF9-47B1-B6F6-2B37-959507AC177F";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 65.658913160039901;
+	setAttr ".coi" 40.312777624625248;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0 8.6840076446533203 0 ;
+	setAttr ".tp" -type "double3" -3.1611313129238106 2.9929696886082198 0.081826983490980609 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "7D580583-4E8B-F2E3-5BA9-79B7D902F0D0";
@@ -6484,15 +6485,15 @@ createNode transform -n "DeskLamp:transform5" -p "DeskLampRNfosterParent1";
 	rename -uid "49398AA5-462D-C302-6BD1-549B8A323AC8";
 	setAttr ".v" no;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "FC2D3309-4D0B-A217-0956-888F46204760";
+	rename -uid "2C67CB3A-4221-B663-52A6-30AA7FC87EB7";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "3488ABB1-4693-8E56-1E77-CAA2D59D8269";
+	rename -uid "D539A9EC-4F59-8AE8-31B9-989D4688731A";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "69642564-4062-4025-18D4-F9892ED4DB6A";
+	rename -uid "C91862CE-4481-9A22-EB22-A0BD17124FA2";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "7144BF2C-41B0-5448-09AE-E885344AEB26";
+	rename -uid "C19E84CB-4E66-521D-E26E-EB8F6EAF7EE5";
 	setAttr ".cdl" 3;
 	setAttr -s 4 ".dli[1:3]"  1 4 3;
 	setAttr -s 3 ".dli";
@@ -6500,7 +6501,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "30A4E62B-4B2E-FB19-E610-9ABA10AD16B9";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "A7D40414-4530-6ABF-040F-6FA7E81FB739";
+	rename -uid "03F86F0F-4DA2-2543-36A3-5685ED329580";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "D12064BD-4DED-04CC-CFE9-2E8D4219226B";
 	setAttr ".g" yes;
