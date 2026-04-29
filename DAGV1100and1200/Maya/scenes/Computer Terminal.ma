@@ -1,0 +1,87 @@
+//Maya ASCII 2026 scene
+//Name: Computer Terminal.ma
+//Last modified: Wed, Apr 29, 2026 03:10:30 PM
+//Codeset: 1252
+requires maya "2026";
+requires "stereoCamera" "10.0";
+requires "mtoa" "5.5.4.2";
+currentUnit -l centimeter -a degree -t film;
+fileInfo "application" "maya";
+fileInfo "product" "Maya 2026";
+fileInfo "version" "2026";
+fileInfo "cutIdentifier" "202510291147-60ec9eda33";
+fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
+fileInfo "UUID" "5FAAE6F2-4854-8CAA-0650-AD999F860639";
+createNode transform -n "pCube5";
+	rename -uid "76C68B43-4356-AF64-33CB-1ABA020D3DB3";
+	setAttr ".t" -type "double3" -6.099559743856295 6.0309652668345954 9.8524469298524391 ;
+	setAttr ".s" -type "double3" 2.2570393999013478 6.0619300996616143 2.2570393999013478 ;
+	setAttr ".rp" -type "double3" 1.1285196680289928 -3.0309650284160106 1.1285196863524019 ;
+	setAttr ".sp" -type "double3" 0.4999999858568358 -0.49999999646732973 0.49999999397517092 ;
+	setAttr ".spt" -type "double3" 0.62851968217215692 -2.5309650319486807 0.62851969237723082 ;
+createNode mesh -n "pCubeShape5" -p "pCube5";
+	rename -uid "68922C9B-4354-79F3-DF91-00A905FD4F0C";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode polyCube -n "polyCube4";
+	rename -uid "3D8F059D-41EA-094D-3AC7-79ACE91E1246";
+	setAttr ".cuv" 4;
+select -ne :time1;
+	setAttr ".o" 96;
+	setAttr ".unw" 96;
+select -ne :hardwareRenderingGlobals;
+	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
+	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
+		 1 1 1 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 ;
+	setAttr ".fprt" yes;
+	setAttr ".rtfm" 1;
+select -ne :renderPartition;
+	setAttr -s 3 ".st";
+select -ne :renderGlobalsList1;
+select -ne :defaultShaderList1;
+	setAttr -s 6 ".s";
+select -ne :postProcessList1;
+	setAttr -s 2 ".p";
+select -ne :defaultRenderUtilityList1;
+select -ne :defaultRenderingList1;
+	setAttr -s 2 ".r";
+select -ne :defaultTextureList1;
+select -ne :standardSurface1;
+	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
+	setAttr ".sr" 0.5;
+select -ne :openPBR_shader1;
+	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
+	setAttr ".sr" 0.5;
+select -ne :initialShadingGroup;
+	setAttr -s 13 ".dsm";
+	setAttr ".ro" yes;
+select -ne :initialParticleSE;
+	setAttr ".ro" yes;
+select -ne :defaultRenderGlobals;
+	addAttr -ci true -h true -sn "dss" -ln "defaultSurfaceShader" -dt "string";
+	setAttr ".ren" -type "string" "arnold";
+	setAttr ".dss" -type "string" "openPBR_shader1";
+select -ne :defaultResolution;
+	setAttr ".pa" 1;
+select -ne :defaultColorMgtGlobals;
+	setAttr ".cfe" yes;
+	setAttr ".cfp" -type "string" "<MAYA_RESOURCES>/OCIO-configs/Maya2022-default/config.ocio";
+	setAttr ".vtn" -type "string" "ACES 1.0 SDR-video (sRGB)";
+	setAttr ".vn" -type "string" "ACES 1.0 SDR-video";
+	setAttr ".dn" -type "string" "sRGB";
+	setAttr ".wsn" -type "string" "ACEScg";
+	setAttr ".otn" -type "string" "ACES 1.0 SDR-video (sRGB)";
+	setAttr ".potn" -type "string" "ACES 1.0 SDR-video (sRGB)";
+select -ne :hardwareRenderGlobals;
+	setAttr ".ctrs" 256;
+	setAttr ".btrs" 512;
+connectAttr "polyCube4.out" "pCubeShape5.i";
+connectAttr "pCubeShape5.iog" ":initialShadingGroup.dsm" -na;
+// End of Computer Terminal.ma
